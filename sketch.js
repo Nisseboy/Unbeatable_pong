@@ -11,7 +11,7 @@ var pSpeed = 7;
 var ballPos = [200, 200];
 var ballVel = [7.5, 0.5];
 var ballW = 10;
-var ballH = 10;
+var ballH = 20;
 var aiTurn = false;
 var points = [0, 0];
 
