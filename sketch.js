@@ -4,14 +4,14 @@
 
 var aiVAi = false;
 var paddleW = 10;
-var paddleH = 75;
+var paddleH = 150;
 var rPPos;
 var lPPos;
 var pSpeed = 7;
 var ballPos = [200, 200];
 var ballVel = [7.5, 0.5];
 var ballW = 10;
-var ballH = 20;
+var ballH = 10;
 var aiTurn = false;
 var points = [0, 0];
 
