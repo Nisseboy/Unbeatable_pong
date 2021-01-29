@@ -42,12 +42,8 @@ function draw() {
   ballPos = addVectors(ballPos, ballVel);
   ballVel = multVectors(bounce(ballPos, false), ballVel);
   
-  if (keyIsDown(38) && rPPos[1] > 0) {
-    rPPos[1] -= pSpeed;
-  }
-  if (keyIsDown(40) && rPPos[1] < height - paddleH) {
-    rPPos[1] += pSpeed;
-  }
+  if (!aiVAi)
+    rPPos[1] = mouseX  - paddleH / 2;
   lPPos[1] += ai(1000, lPPos);
   if (aiVAi) rPPos[1] += ai(1000, rPPos);
   fill(255);
